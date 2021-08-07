@@ -6,8 +6,8 @@ export default function Contact() {
         <div>
            <div className="contpart1">
            <div className="contintro"><h1 className="contacthead">Contact <br/> frontend development</h1></div> 
-           <div><button>call</button>
-           <h1>this is the contact page</h1>
+           <div><button className="contactbtn">call</button>
+           <h1 className="contactcontent">this is the contact page</h1>
            </div>
            </div>
            <div className="contactpart2">
