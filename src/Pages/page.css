@@ -1,22 +1,35 @@
 
 .nav{
-    display: flex;
-    width: 100%;
+   display: flex;
+    width: 94%;
     height: 150px;
     background: rgb(32, 66, 59);
     color: white;
+    align-items: center;
     justify-content: flex-end;
-    justify-items: space-between;
+    padding: 0 3% 0 3%;
+    
+   
+    
+    /* justify-items: right; */
     
     
 }
+.navdiv{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    /* align-items: stretch; */
+    justify-content: space-between;
+}
 .Link{
+    /* display: flex; */
     color: white;
     font-size: 35px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    align-content: space-around;
+    
 
 }
 .Link:hover{
@@ -28,6 +41,7 @@
   align-items: right;
   background-color: rgb(178, 241, 241);
   height: 1000px;
+  padding: 0 3% 0 3%;
 }
 .home{
    
