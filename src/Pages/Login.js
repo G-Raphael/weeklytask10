@@ -13,19 +13,21 @@ export default function Login() {
     }
     const handleSubmit = (e) =>{
         e.preventDefault();
-        if(input.username!== null){
-            alert(`Thank you ${input.username}`);
+        if(input.username !=='' && input.password !==''){
+            alert(`Welcome ${input.username}`);
         }
         else{
-            alert('please fill the form correctly')
+            alert('please fill the form correctly');
         }
     }
     return (
-        <div>
-            <input type="text" onChange={(e)=> handleChange(e)} name="username" placeholder='username'></input><br/>
-            <input type="password" onChange={(e)=> handleChange(e)} name="password" placeholder='password'></input><br/>
+        <div className="logincontainer">
+            <div className="container">
+            <input className="login1" type="text" onChange={(e)=> handleChange(e)} name="username" placeholder='username'></input><br/>
+            <input className="login2" type="password" onChange={(e)=> handleChange(e)} name="password" placeholder='password'></input><br/>
     
-            <button onClick={handleSubmit}>Login</button>
+            <button className="loginbtn " onClick={handleSubmit}>Login</button>
+            </div>
         </div>
     )
 }
