@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch,Route,Link} from "react-router-dom";
+import {HashRouter as Router, Switch,Route,Link} from "react-router-dom";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
@@ -15,7 +15,7 @@ return(
   <div className="MAIN">
     
     <nav className="nav">
-     <Link className="Link" to="/home">Home</Link> 
+ <Link className="Link" to="/home">Home</Link> 
   <Link className="Link" to="/about">About</Link> 
   <Link className="Link" to ="/contact">Contact</Link>
    <Link className="Link" to="/Login">Login</Link>
@@ -26,7 +26,7 @@ return(
    {/* <h1>Hello World...</h1>
     <button onClick={() => setState(state+1)}>Click</button>
     {state}  */}
-
+    <Router>
     <Switch>
      <Route path="/contact">
        <Contact />
@@ -41,7 +41,7 @@ return(
        <Home />
      </Route> 
      </Switch>
-  
+     </Router>  
       {/* <Forms />  */}
       </section>
    
